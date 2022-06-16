@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Accordion from 'components/accordion/Accordion';
+import Editable from 'components/editable/Editable';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <Accordion />
+        <Editable />
       </header>
     </div>
   );
