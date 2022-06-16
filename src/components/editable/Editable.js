@@ -1,9 +1,12 @@
+import useToggle from 'hooks/useToggle';
 import React, { useState } from 'react';
 
 
 const Editable = () => {
 
-    const [editable, setEditable] = useState(false);
+    // const [editable, setEditable] = useState(false);
+    const { status: editable, toggleStatus: setEditable } = useToggle();
+
     const [inputValue, setInputValue] = useState("Title");
 
     const toggleEditable = () => {

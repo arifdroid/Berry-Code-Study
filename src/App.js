@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Accordion from 'components/accordion/Accordion';
 import Editable from 'components/editable/Editable';
+import AccordionContainer from 'components/accordion/AccordionContainer';
 
 function App() {
   return (
@@ -19,8 +20,14 @@ function App() {
         >
           Learn React
         </a>
-        <Accordion />
-        <Editable />
+        {/* <Accordion />
+        <Editable /> */}
+
+        <AccordionContainer header={'Click to display'}>
+          <div>this is children</div>
+        </AccordionContainer>
+        
+
       </header>
     </div>
   );
