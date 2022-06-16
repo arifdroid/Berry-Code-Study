@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AccordionContext } from './AccordionWithContext';
 
-const AccordionContent = ({ children, expanded }) => {
+const AccordionContent = ({ children }) => {
+    const { expanded } = useContext(AccordionContext);
+
     return <>{expanded && children}</>
 }
 

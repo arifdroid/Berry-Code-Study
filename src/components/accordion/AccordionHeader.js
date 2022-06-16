@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AccordionContext } from './AccordionWithContext';
 
-const AccordionHeader = ({ toggleExpanded, children, expanded }) => {
+const AccordionHeader = ({ children }) => {
+
+    const { expanded, toggleExpanded } = useContext(AccordionContext);
+
+
     return (
-        <button onClick={toggleExpanded}>
-            {children} <span>{expanded ? '-' : '+'}</span>
+        // <>as</>
+        <button
+        onClick={toggleExpanded}
+        >
+            {children}
+            <span>{expanded ? '-' : '+'}</span>
         </button>
     )
 }

@@ -3,6 +3,7 @@ import './App.css';
 import Accordion from 'components/accordion/Accordion';
 import Editable from 'components/editable/Editable';
 import AccordionContainer from 'components/accordion/AccordionContainer';
+import AccordionWContext from 'components/accordion/AccordionWithContext';
 
 function App() {
   return (
@@ -23,10 +24,15 @@ function App() {
         {/* <Accordion />
         <Editable /> */}
 
-        <AccordionContainer header={'Click to display'}>
+        {/* <AccordionContainer header={'Click to display'}>
           <div>this is children</div>
-        </AccordionContainer>
-        
+        </AccordionContainer> */}
+
+        <AccordionWContext header={'Accordion 2 : Click to Display'}>
+          <div>this is children 2</div>
+
+        </AccordionWContext>
+
 
       </header>
     </div>
