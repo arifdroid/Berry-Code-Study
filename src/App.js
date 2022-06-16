@@ -4,6 +4,7 @@ import Accordion from 'components/accordion/Accordion';
 import Editable from 'components/editable/Editable';
 import AccordionContainer from 'components/accordion/AccordionContainer';
 import AccordionWContext from 'components/accordion/AccordionWithContext';
+import DemoCallbackHook from 'hooks/useCallbackDemo';
 
 function App() {
   return (
@@ -28,10 +29,12 @@ function App() {
           <div>this is children</div>
         </AccordionContainer> */}
 
-        <AccordionWContext header={'Accordion 2 : Click to Display'}>
+        {/* <AccordionWContext header={'Accordion 2 : Click to Display'}>
           <div>this is children 2</div>
 
-        </AccordionWContext>
+        </AccordionWContext> */}
+
+        <DemoCallbackHook />
 
 
       </header>
